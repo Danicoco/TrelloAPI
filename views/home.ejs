@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Trello API</title>
+  </head>
+  <body>
+      <div class="row mt-3">
+          <div class="col-md-4">
+            <h4>Upload To Trello Through This Form</h4>
+
+            <form action="/accept" method="POST" encType="multipart/form-data">
+                <div class="mb-3">
+                    <label for="file" class="form-label text-white">PDF file</label>
+                    <input type="file" class="form-control" id="file">
+                  </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" id="submit" class="btn btn-primary">Upload PDF</button>
+                </div>
+              </form>
+          </div>
+      </div>
+      <h2>This image</h2>
+      <img src="http://123456abcde124.co.uk:8099/emby/Items/617a472f98adfe8c2c687709da7c5da4/Images/Primary?api_key=912de078d24a4f9798df73ad47ef1389" alt="" width="100px" height="100px">
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+    integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+    crossorigin="anonymous"></script>
+    <script src="/static/js/trello.js"></script>
+  </body>
+</html>
